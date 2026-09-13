@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <meta name="theme-color" content="#070707" />
+
+    <meta
+      name="description"
+      content="FAYAD CODE — منصة تعليمية عربية عملية لتعلم Git وGitHub من الصفر حتى بناء workflow احترافي."
+    />
+
+    <meta name="robots" content="index, follow" />
+
+    <title>FAYAD CODE — تعلم Git وGitHub</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.json" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#f97316" />
+
+    <!-- Mobile -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Fayad Code" />
+
+    <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/icons/icon-192.png"
+    />
+  </head>
+
+  <body>
+    <!-- =========================
+         Background
+    ========================== -->
+
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="page-grid" aria-hidden="true"></div>
+
+    <!-- =========================
+         Header
+    ========================== -->
+
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="FAYAD CODE">
+          <span class="brand-mark">F</span>
+
+          <span class="brand-text">
+            <strong>FAYAD</strong>
+            <span>CODE</span>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="التنقل الرئيسي">
+          <a href="#home" class="nav-link active"> الرئيسية </a>
+
+          <a href="#course" class="nav-link"> الكورس </a>
+
+          <a href="#roadmap" class="nav-link"> المسار </a>
+
+          <a href="#features" class="nav-link"> المميزات </a>
+
+          <a href="#about" class="nav-link"> عن المنصة </a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="learning/index.html" class="header-cta">
+            <span>ابدأ التعلم</span>
+            <span class="header-cta-arrow">←</span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="فتح القائمة"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+
+      <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <div class="mobile-nav-inner">
+          <div class="mobile-nav-header">
+            <span>التنقل</span>
+
+            <button
+              type="button"
+              class="mobile-close"
+              id="mobileClose"
+              aria-label="إغلاق القائمة"
+            >
+              ×
+            </button>
+          </div>
+
+          <div class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-link active">
+              <span class="mobile-nav-number">01</span>
+              <span>الرئيسية</span>
+            </a>
+
+            <a href="#course" class="mobile-nav-link">
+              <span class="mobile-nav-number">02</span>
+              <span>الكورس</span>
+            </a>
+
+            <a href="#roadmap" class="mobile-nav-link">
+              <span class="mobile-nav-number">03</span>
+              <span>المسار</span>
+            </a>
+
+            <a href="#features" class="mobile-nav-link">
+              <span class="mobile-nav-number">04</span>
+              <span>المميزات</span>
+            </a>
+
+            <a href="#about" class="mobile-nav-link">
+              <span class="mobile-nav-number">05</span>
+              <span>عن المنصة</span>
+            </a>
+          </div>
+
+          <a href="learning/index.html" class="mobile-start">
+            <span>ابدأ التعلم</span>
+            <span>←</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+      <button
+        type="button"
+        id="installAppButton"
+        class="install-app-button"
+        hidden
+      >
+        <span class="install-app-icon">↓</span>
+        <span>تثبيت التطبيق</span>
+      </button>
+    </header>
+
+    <!-- =========================
+         Main
+    ========================== -->
+
+    <main>
+      <!-- =========================
+             Hero
+        ========================== -->
+
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <div class="eyebrow">
+              <span class="status-dot"></span>
+
+              <span> منصة تعليمية عربية للمطورين </span>
+
+              <span class="eyebrow-line"></span>
+            </div>
+
+            <h1>
+              تعلّم
+
+              <span class="gradient-text"> Git & GitHub </span>
+
+              بطريقة تفهمها وتستخدمها.
+            </h1>
+
+            <p class="hero-description">
+              مسار عملي متكامل يبدأ معك من الصفر، يشرح لك لماذا تعمل الأدوات
+              بالطريقة التي تعمل بها، ثم يحول المعرفة إلى ممارسة حقيقية داخل
+              مشاريعك.
+            </p>
+
+            <div class="hero-actions">
+              <a href="learning/index.html" class="button button-primary">
+                <span>ابدأ التعلم</span>
+                <span class="button-arrow">←</span>
+              </a>
+
+              <a href="#roadmap" class="button button-secondary">
+                <span>استكشف المسار</span>
+              </a>
+            </div>
+
+            <div class="hero-meta">
+              <div class="meta-item">
+                <strong>30+</strong>
+
+                <span> درسًا متدرجًا </span>
+              </div>
+
+              <div class="meta-divider"></div>
+
+              <div class="meta-item">
+                <strong>100%</strong>
+
+                <span> محتوى عربي </span>
+              </div>
+
+              <div class="meta-divider"></div>
+
+              <div class="meta-item">
+                <strong>Practical</strong>
+
+                <span> تعلم بالتطبيق </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual -->
+
+          <div class="hero-visual reveal reveal-delay">
+            <div class="visual-label">
+              <span class="visual-status"></span>
+              بيئة التعلم
+            </div>
+
+            <div class="terminal">
+              <div class="terminal-top">
+                <div class="terminal-window-info">
+                  <div class="terminal-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+                  <span class="terminal-title"> fayad-code / project </span>
+                </div>
+
+                <span class="terminal-status"> main </span>
+              </div>
+
+              <div class="terminal-body">
+                <div class="terminal-line">
+                  <span class="terminal-prompt"> $ </span>
+
+                  <span> git init </span>
+                </div>
+
+                <div class="terminal-output">
+                  Initialized empty Git repository
+                </div>
+
+                <div class="terminal-line">
+                  <span class="terminal-prompt"> $ </span>
+
+                  <span> git add . </span>
+                </div>
+
+                <div class="terminal-line">
+                  <span class="terminal-prompt"> $ </span>
+
+                  <span> git commit -m "first commit" </span>
+                </div>
+
+                <div class="terminal-success">
+                  <span>✓</span>
+                  Changes committed successfully
+                </div>
+
+                <div class="terminal-line typing-wrapper">
+                  <span class="terminal-prompt"> $ </span>
+
+                  <span class="typing-line"> git push origin main </span>
+
+                  <span class="cursor"></span>
+                </div>
+              </div>
+
+              <div class="terminal-bottom">
+                <span> repository </span>
+
+                <span> clean </span>
+              </div>
+            </div>
+
+            <div class="floating-card floating-card-one">
+              <span class="floating-icon"> Git </span>
+
+              <div>
+                <strong> Version Control </strong>
+
+                <small> تحكم كامل في تاريخ مشروعك </small>
+              </div>
+            </div>
+
+            <div class="floating-card floating-card-two">
+              <span class="floating-icon"> GH </span>
+
+              <div>
+                <strong> GitHub </strong>
+
+                <small> شارك واعمل مع فريقك </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-scroll">
+          <span class="scroll-line"></span>
+
+          <span> اكتشف المنصة </span>
+        </div>
+      </section>
+
+      <!-- =========================
+             Course
+        ========================== -->
+
+      <section class="section course-section" id="course">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="section-label"> THE COURSE </span>
+
+              <h2>
+                كورس واحد،
+                <span class="gradient-text"> مهارة كاملة. </span>
+              </h2>
+            </div>
+
+            <p>
+              من فهم فكرة Version Control إلى استخدام Git وGitHub داخل المشاريع
+              والتعاون مع المطورين.
+            </p>
+          </div>
+
+          <article class="course-card reveal">
+            <div class="course-card-main">
+              <div class="course-icon-wrap">
+                <div class="course-icon">git</div>
+
+                <span class="course-icon-line"></span>
+              </div>
+
+              <div class="course-info">
+                <div class="course-heading-row">
+                  <span class="course-category"> Git & GitHub </span>
+
+                  <span class="course-level"> من المبتدئ إلى المتقدم </span>
+                </div>
+
+                <h3>ابنِ أساسًا قويًا قبل أن تدخل عالم المشاريع الحقيقية.</h3>
+
+                <p>
+                  ستتعلم كيف يعمل Git من الداخل، وكيف تدير التغييرات، وتبني
+                  Branches، وتتعامل مع Merge Conflicts، ثم تنتقل إلى GitHub
+                  وPull Requests والعمل الجماعي والـworkflow الاحترافي.
+                </p>
+
+                <div class="course-tags">
+                  <span> للمبتدئين </span>
+
+                  <span> تطبيق عملي </span>
+
+                  <span> اختبارات </span>
+
+                  <span> GitHub </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-card-side">
+              <div class="course-stat">
+                <strong> 30+ </strong>
+
+                <span> درس </span>
+              </div>
+
+              <div class="course-stat">
+                <strong> 06 </strong>
+
+                <span> مراحل رئيسية </span>
+              </div>
+
+              <div class="course-progress">
+                <div class="progress-header">
+                  <span> جاهز للبداية </span>
+
+                  <strong> 0% </strong>
+                </div>
+
+                <div class="progress-track">
+                  <span></span>
+                </div>
+              </div>
+
+              <a
+                href="learning/index.html"
+                class="button button-primary course-button"
+              >
+                <span> دخول المسار </span>
+
+                <span> ← </span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================
+             Roadmap
+        ========================== -->
+
+      <section class="section roadmap-section" id="roadmap">
+        <div class="container">
+          <div class="section-heading centered">
+            <span class="section-label"> LEARNING ROADMAP </span>
+
+            <h2>
+              طريق واضح من
+              <span class="gradient-text"> الصفر </span>
+              إلى الاحتراف.
+            </h2>
+
+            <p>
+              لن نقفز مباشرة إلى الأوامر المتقدمة. كل مرحلة مبنية على التي
+              قبلها.
+            </p>
+          </div>
+
+          <div class="roadmap">
+            <div class="roadmap-line" aria-hidden="true"></div>
+
+            <article class="roadmap-item reveal">
+              <span class="roadmap-number"> 01 </span>
+
+              <div class="roadmap-content">
+                <span> FOUNDATION </span>
+
+                <h3>فهم Version Control</h3>
+
+                <p>لماذا نحتاج Git؟ وما المشكلة التي يحلها أصلًا؟</p>
+              </div>
+            </article>
+
+            <article class="roadmap-item reveal">
+              <span class="roadmap-number"> 02 </span>
+
+              <div class="roadmap-content">
+                <span> CORE </span>
+
+                <h3>أساسيات Git</h3>
+
+                <p>Repository، Working Directory، Staging، Commit وHistory.</p>
+              </div>
+            </article>
+
+            <article class="roadmap-item reveal">
+              <span class="roadmap-number"> 03 </span>
+
+              <div class="roadmap-content">
+                <span> WORKFLOW </span>
+
+                <h3>Branching & Merging</h3>
+
+                <p>طوّر Features منفصلة وادمجها بدون فوضى في المشروع.</p>
+              </div>
+            </article>
+
+            <article class="roadmap-item reveal">
+              <span class="roadmap-number"> 04 </span>
+
+              <div class="roadmap-content">
+                <span> COLLABORATION </span>
+
+                <h3>GitHub والعمل الجماعي</h3>
+
+                <p>Remote Repositories، Push، Pull، Clone وPull Requests.</p>
+              </div>
+            </article>
+
+            <article class="roadmap-item reveal">
+              <span class="roadmap-number"> 05 </span>
+
+              <div class="roadmap-content">
+                <span> ADVANCED </span>
+
+                <h3>Git المتقدم</h3>
+
+                <p>Rebase، Stash، Reset، Revert، Cherry-pick وغيرها.</p>
+              </div>
+            </article>
+
+            <article class="roadmap-item reveal">
+              <span class="roadmap-number"> 06 </span>
+
+              <div class="roadmap-content">
+                <span> PROFESSIONAL </span>
+
+                <h3>Workflow احترافي</h3>
+
+                <p>استخدم Git كما يستخدمه المطورون داخل المشاريع الحقيقية.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="roadmap-footer">
+            <span class="roadmap-footer-line"></span>
+
+            <span> والمسار يتوسع مع تقدمك </span>
+
+            <span class="roadmap-footer-line"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             Features
+        ========================== -->
+
+      <section class="section features-section" id="features">
+        <div class="container">
+          <div class="section-heading centered">
+            <span class="section-label"> WHY FAYAD CODE </span>
+
+            <h2>
+              التعلم هنا ليس
+              <span class="gradient-text"> مشاهدة فقط. </span>
+            </h2>
+
+            <p>
+              الهدف أن تخرج من كل درس وأنت قادر على استخدام ما تعلمته بنفسك.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <article class="feature-card reveal">
+              <span class="feature-number"> 01 </span>
+
+              <div class="feature-icon">&lt;/&gt;</div>
+
+              <h3>تطبيق مباشر</h3>
+
+              <p>
+                لا نكتفي بشرح المفهوم. ستشاهد كيف يستخدم داخل مشروع حقيقي ثم
+                تطبقه بنفسك.
+              </p>
+
+              <span class="feature-link"> Learn by doing </span>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-number"> 02 </span>
+
+              <div class="feature-icon">!</div>
+
+              <h3>فهم الأخطاء</h3>
+
+              <p>
+                الخطأ جزء من التطوير. ستتعلم كيف تقرأ المشكلة وتفهم سببها وتصل
+                للحل بدل الحفظ.
+              </p>
+
+              <span class="feature-link"> Debug with confidence </span>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-number"> 03 </span>
+
+              <div class="feature-icon">+</div>
+
+              <h3>Workflow حقيقي</h3>
+
+              <p>
+                Branches وMerges وPull Requests ليست كلمات فقط، بل أدوات
+                ستستخدمها في سير عمل متكامل.
+              </p>
+
+              <span class="feature-link"> Real workflow </span>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-number"> 04 </span>
+
+              <div class="feature-icon">✓</div>
+
+              <h3>اختبر فهمك</h3>
+
+              <p>
+                اختبارات قصيرة بعد الدروس تساعدك على معرفة هل فهمت الفكرة فعلًا
+                أم تحتاج مراجعتها.
+              </p>
+
+              <span class="feature-link"> Check your knowledge </span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             Learning System
+        ========================== -->
+
+      <section class="section learning-section">
+        <div class="container">
+          <div class="learning-panel reveal">
+            <div class="learning-copy">
+              <span class="section-label"> THE LEARNING SYSTEM </span>
+
+              <h2>
+                لا تحفظ الأمر.
+                <span class="gradient-text"> افهم لماذا تستخدمه. </span>
+              </h2>
+
+              <p>
+                كل درس داخل المنصة مبني على دورة تعلم بسيطة: تفهم الفكرة، تراها
+                في مثال، تطبقها، ثم تختبر نفسك.
+              </p>
+
+              <a href="learning/index.html" class="text-link">
+                اكتشف طريقة التعلم
+                <span>←</span>
+              </a>
+            </div>
+
+            <div class="learning-flow">
+              <div class="flow-step active">
+                <span> 01 </span>
+
+                <strong> افهم </strong>
+
+                <small> تعرّف على الفكرة </small>
+              </div>
+
+              <div class="flow-connector"></div>
+
+              <div class="flow-step">
+                <span> 02 </span>
+
+                <strong> طبّق </strong>
+
+                <small> اكتب الأمر بنفسك </small>
+              </div>
+
+              <div class="flow-connector"></div>
+
+              <div class="flow-step">
+                <span> 03 </span>
+
+                <strong> جرّب </strong>
+
+                <small> تعامل مع المشكلة </small>
+              </div>
+
+              <div class="flow-connector"></div>
+
+              <div class="flow-step">
+                <span> 04 </span>
+
+                <strong> أثبت </strong>
+
+                <small> اختبر فهمك </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             About
+        ========================== -->
+
+      <section class="section about-section" id="about">
+        <div class="container">
+          <div class="about-card reveal">
+            <div class="about-content">
+              <span class="section-label"> FAYAD ECOSYSTEM </span>
+
+              <h2>
+                ابنِ مهاراتك،
+                <span class="gradient-text"> ثم ابنِ مشاريعك. </span>
+              </h2>
+
+              <p>
+                FAYAD CODE هو جزء من رؤية تعليمية تهدف إلى تقديم محتوى عملي واضح
+                للمطورين العرب، يبدأ من الأساسيات ويبني المهارة خطوة بخطوة.
+              </p>
+
+              <div class="ecosystem-links">
+                <a
+                  href="https://fayad-learning.vercel.app"
+                  class="ecosystem-item"
+                >
+                  <strong> FAYAD LEARNING </strong>
+
+                  <span> Web Development </span>
+                </a>
+
+                <span class="ecosystem-arrow" aria-hidden="true"> ↔ </span>
+
+                <div class="ecosystem-item current">
+                  <strong> FAYAD CODE </strong>
+
+                  <span> Git & GitHub </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-symbol">
+              <span> F </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             CTA
+        ========================== -->
+
+      <section class="section cta-section">
+        <div class="container">
+          <div class="cta-card reveal">
+            <div class="cta-glow"></div>
+
+            <span class="section-label"> START TODAY </span>
+
+            <h2>
+              جاهز تبدأ
+              <span class="gradient-text"> رحلة Git؟ </span>
+            </h2>
+
+            <p>
+              ابدأ من أول درس، وتعلم مهارة سترافقك في كل مشروع برمجي تبنيه
+              تقريبًا.
+            </p>
+
+            <a
+              href="learning/index.html"
+              class="button button-primary cta-button"
+            >
+              <span> ابدأ التعلم الآن </span>
+
+              <span> ← </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         Footer
+    ========================== -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a href="#home" class="brand" aria-label="FAYAD CODE">
+              <span class="brand-mark"> F </span>
+
+              <span class="brand-text">
+                <strong>FAYAD</strong>
+                <span>CODE</span>
+              </span>
+            </a>
+
+            <p>
+              منصة تعليمية عربية تساعدك على بناء مهارات عملية يحتاجها المطورون
+              في المشاريع الحقيقية.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>المنصة</h3>
+
+            <a href="#home"> الرئيسية </a>
+
+            <a href="#course"> الكورس </a>
+
+            <a href="#roadmap"> المسار </a>
+          </div>
+
+          <div class="footer-column">
+            <h3>التعلم</h3>
+
+            <a href="learning/index.html"> جميع الدروس </a>
+
+            <a href="learning/index.html"> Git </a>
+
+            <a href="learning/index.html"> GitHub </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>
+            ©
+            <span id="currentYear"></span>
+            FAYAD CODE
+          </span>
+
+          <span> تعلّم. طبّق. ابنِ. </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
