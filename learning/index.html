@@ -1,549 +1,1095 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
 
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
 
     <meta
-      name="description"
-      content="Fayad Code — مسار عربي عملي ومكثف لتعلم Git وGitHub من الصفر حتى مستوى العمل الاحترافي."
-    />
+        name="description"
+        content="Fayad Code — مسار عربي عملي ومكثف لتعلم Git وGitHub من الصفر حتى مستوى العمل الاحترافي."
+    >
 
-    <meta name="theme-color" content="#070707" />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="theme-color"
+        content="#070707"
+    >
+
+    <meta
+        name="color-scheme"
+        content="dark"
+    >
+
+    <!-- iOS PWA -->
+    <meta
+        name="apple-mobile-web-app-capable"
+        content="yes"
+    >
+
+    <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent"
+    >
+
+    <meta
+        name="apple-mobile-web-app-title"
+        content="Fayad Code"
+    >
 
     <title>Fayad Code — مسار Git & GitHub</title>
 
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="manifest" href="../manifest.json" />
+    <!-- Styles -->
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
 
-    <meta name="theme-color" content="#f97316" />
+    <!-- PWA -->
+    <link
+        rel="manifest"
+        href="../manifest.json"
+    >
 
-    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+    <!-- Icons -->
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="../assets/icons/favicon.svg"
+    >
 
     <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="../assets/icons/icon-192.png"
-    />
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="../assets/icons/icon-192.png"
+    >
 
-    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+    <link
+        rel="apple-touch-icon"
+        href="../assets/icons/apple-touch-icon.png"
+    >
+</head>
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+<body>
 
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-
-    <meta name="apple-mobile-web-app-title" content="Fayad Code" />
-  </head>
-
-  <body>
     <div class="site-shell">
-      <!-- =========================
-         HEADER
-    ========================== -->
 
-      <header class="topbar" id="topbar">
-        <div class="topbar-inner">
-          <a
-            href="../index.html"
-            class="brand"
-            aria-label="العودة إلى Fayad Code"
-          >
-            <span class="brand-mark">F</span>
+        <!-- =====================================================
+             HEADER
+        ====================================================== -->
 
-            <span class="brand-copy">
-              <strong>Fayad</strong>
-              <span>Code</span>
-            </span>
-          </a>
+        <header
+            class="topbar"
+            id="topbar"
+        >
+            <div class="topbar-inner">
 
-          <div class="topbar-course">
-            <span class="topbar-kicker"> المسار التعليمي </span>
+                <!-- Brand -->
 
-            <strong> Git & GitHub </strong>
-          </div>
+                <a
+                    href="../index.html"
+                    class="brand"
+                    aria-label="العودة إلى الصفحة الرئيسية لـ Fayad Code"
+                >
+                    <span
+                        class="brand-mark"
+                        aria-hidden="true"
+                    >
+                        F
+                    </span>
 
-          <div class="topbar-actions">
-            <button
-              class="topbar-button"
-              id="openLessonsButton"
-              type="button"
-              aria-expanded="false"
-              aria-controls="sidebar"
+                    <span class="brand-copy">
+                        <strong>Fayad</strong>
+                        <span>Code</span>
+                    </span>
+                </a>
+
+
+                <!-- Course Identity -->
+
+                <div class="topbar-course">
+                    <span class="topbar-kicker">
+                        المسار التعليمي
+                    </span>
+
+                    <strong>
+                        Git &amp; GitHub
+                    </strong>
+                </div>
+
+
+                <!-- Header Actions -->
+
+                <div class="topbar-actions">
+
+                    <button
+                        class="topbar-button"
+                        id="openLessonsButton"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="sidebar"
+                    >
+                        <span
+                            class="button-icon"
+                            aria-hidden="true"
+                        >
+                            ☰
+                        </span>
+
+                        <span>
+                            الدروس
+                        </span>
+                    </button>
+
+                    <a
+                        href="../index.html"
+                        class="back-home"
+                    >
+                        الرئيسية
+                    </a>
+
+                </div>
+
+            </div>
+        </header>
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section
+            class="learning-hero"
+            aria-labelledby="learningHeroTitle"
+        >
+            <div class="hero-grid">
+
+                <!-- Hero Copy -->
+
+                <div class="hero-copy">
+
+                    <div class="hero-eyebrow">
+                        <span
+                            class="live-dot"
+                            aria-hidden="true"
+                        ></span>
+
+                        FAYAD CODE / GIT &amp; GITHUB
+                    </div>
+
+
+                    <h1 id="learningHeroTitle">
+                        ابنِ فهمًا حقيقيًا لـ
+                        <span>Git &amp; GitHub</span>
+                    </h1>
+
+
+                    <p class="hero-description">
+                        مسار تدريبي مكثف يأخذك من أول مفهوم في
+                        Version Control إلى التعامل مع Branches وMerge
+                        وRemote Repositories وPull Requests وGitHub
+                        Workflows والعمل الجماعي في المشاريع الحقيقية.
+                    </p>
+
+
+                    <!-- Hero Actions -->
+
+                    <div class="hero-actions">
+
+                        <button
+                            class="hero-primary"
+                            id="startLearningButton"
+                            type="button"
+                        >
+                            <span>
+                                ابدأ التعلم
+                            </span>
+
+                            <span aria-hidden="true">
+                                ←
+                            </span>
+                        </button>
+
+
+                        <button
+                            class="hero-secondary"
+                            id="continueLearningButton"
+                            type="button"
+                        >
+                            متابعة التعلم
+                        </button>
+
+                    </div>
+
+
+                    <!-- Hero Stats -->
+
+                    <div
+                        class="hero-stats"
+                        aria-label="إحصائيات المسار"
+                    >
+
+                        <div class="hero-stat">
+                            <strong id="totalLessons">
+                                50
+                            </strong>
+
+                            <span>
+                                درسًا
+                            </span>
+                        </div>
+
+
+                        <div class="hero-stat">
+                            <strong id="completedLessons">
+                                0
+                            </strong>
+
+                            <span>
+                                مكتمل
+                            </span>
+                        </div>
+
+
+                        <div class="hero-stat">
+                            <strong id="progressPercent">
+                                0%
+                            </strong>
+
+                            <span>
+                                التقدم
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     HERO TERMINAL
+                ================================================== -->
+
+                <div class="hero-terminal">
+
+                    <div
+                        class="terminal-window"
+                        aria-label="مثال على استخدام Git"
+                    >
+
+                        <div class="terminal-bar">
+
+                            <div
+                                class="terminal-dots"
+                                aria-hidden="true"
+                            >
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="terminal-name">
+                                fayad-code ~/project
+                            </span>
+
+                        </div>
+
+
+                        <div class="terminal-content">
+
+                            <div class="terminal-line">
+                                <span
+                                    class="prompt"
+                                    aria-hidden="true"
+                                >
+                                    $
+                                </span>
+
+                                <span>
+                                    git status
+                                </span>
+                            </div>
+
+
+                            <div class="terminal-output">
+                                On branch main
+                                <br>
+                                Your branch is up to date.
+                            </div>
+
+
+                            <div class="terminal-line">
+                                <span
+                                    class="prompt"
+                                    aria-hidden="true"
+                                >
+                                    $
+                                </span>
+
+                                <span>
+                                    git add .
+                                </span>
+                            </div>
+
+
+                            <div class="terminal-line">
+                                <span
+                                    class="prompt"
+                                    aria-hidden="true"
+                                >
+                                    $
+                                </span>
+
+                                <span>
+                                    git commit -m "build: first release"
+                                </span>
+                            </div>
+
+
+                            <div class="terminal-output success">
+                                ✓ changes committed successfully
+                            </div>
+
+
+                            <div class="terminal-line terminal-last">
+
+                                <span
+                                    class="prompt"
+                                    aria-hidden="true"
+                                >
+                                    $
+                                </span>
+
+                                <span class="typing-effect">
+                                    git push origin main
+                                </span>
+
+                                <span
+                                    class="cursor"
+                                    aria-hidden="true"
+                                ></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="terminal-caption">
+                        تعلّم الأمر، نفّذه، افهم النتيجة.
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             LEARNING APPLICATION
+        ====================================================== -->
+
+        <main class="learning-app">
+
+            <!-- Sidebar Overlay -->
+
+            <div
+                class="sidebar-overlay"
+                id="sidebarOverlay"
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- =================================================
+                 LESSON SIDEBAR
+            ================================================== -->
+
+            <aside
+                class="lesson-sidebar"
+                id="sidebar"
+                aria-label="قائمة الدروس"
             >
-              <span class="button-icon">☰</span>
-              <span>الدروس</span>
-            </button>
 
-            <a href="../index.html" class="back-home"> الرئيسية </a>
-          </div>
-        </div>
-      </header>
+                <div class="sidebar-inner">
 
-      <!-- =========================
-         HERO
-    ========================== -->
+                    <!-- Sidebar Header -->
 
-      <section class="learning-hero">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <div class="hero-eyebrow">
-              <span class="live-dot"></span>
-              FAYAD CODE / GIT & GITHUB
-            </div>
+                    <div class="sidebar-head">
 
-            <h1>
-              ابنِ فهمًا حقيقيًا لـ
-              <span>Git & GitHub</span>
-            </h1>
+                        <div>
+                            <span class="sidebar-overline">
+                                COURSE CONTENT
+                            </span>
 
-            <p class="hero-description">
-              مسار تدريبي مكثف يأخذك من أول مفهوم في Version Control إلى التعامل
-              مع Branches وMerge وRemote Repositories وPull Requests وGitHub
-              Workflows والعمل الجماعي في المشاريع الحقيقية.
-            </p>
+                            <h2>
+                                خطة التعلم
+                            </h2>
+                        </div>
 
-            <div class="hero-actions">
-              <button
-                class="hero-primary"
-                id="startLearningButton"
-                type="button"
-              >
-                ابدأ التعلم
-                <span>←</span>
-              </button>
 
-              <button
-                class="hero-secondary"
-                id="continueLearningButton"
-                type="button"
-              >
-                متابعة التعلم
-              </button>
-            </div>
+                        <button
+                            class="sidebar-close"
+                            id="sidebarClose"
+                            type="button"
+                            aria-label="إغلاق قائمة الدروس"
+                        >
+                            ×
+                        </button>
 
-            <div class="hero-stats">
-              <div class="hero-stat">
-                <strong id="totalLessons">50</strong>
-                <span>درسًا</span>
-              </div>
+                    </div>
 
-              <div class="hero-stat">
-                <strong id="completedLessons">0</strong>
-                <span>مكتمل</span>
-              </div>
 
-              <div class="hero-stat">
-                <strong id="progressPercent">0%</strong>
-                <span>التقدم</span>
-              </div>
-            </div>
-          </div>
+                    <!-- Lesson Search -->
 
-          <!-- Terminal -->
+                    <div class="lesson-search">
 
-          <div class="hero-terminal">
-            <div class="terminal-window">
-              <div class="terminal-bar">
-                <div class="terminal-dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                        <span
+                            class="search-symbol"
+                            aria-hidden="true"
+                        >
+                            ⌕
+                        </span>
+
+                        <input
+                            type="search"
+                            id="lessonSearch"
+                            placeholder="ابحث عن درس أو مفهوم..."
+                            autocomplete="off"
+                            spellcheck="false"
+                            aria-label="البحث في الدروس"
+                        >
+
+                        <kbd aria-label="اختصار لوحة المفاتيح">
+                            /
+                        </kbd>
+
+                    </div>
+
+
+                    <!-- Course Filters -->
+
+                    <div class="sidebar-filter-block">
+
+                        <span class="filter-title">
+                            المحتوى
+                        </span>
+
+                        <div
+                            class="filter-row"
+                            id="courseFilters"
+                            role="group"
+                            aria-label="فلترة حسب المحتوى"
+                        >
+
+                            <button
+                                class="filter-chip active"
+                                type="button"
+                                data-course="all"
+                                aria-pressed="true"
+                            >
+                                الكل
+                            </button>
+
+
+                            <button
+                                class="filter-chip"
+                                type="button"
+                                data-course="Git"
+                                aria-pressed="false"
+                            >
+                                Git
+                            </button>
+
+
+                            <button
+                                class="filter-chip"
+                                type="button"
+                                data-course="GitHub"
+                                aria-pressed="false"
+                            >
+                                GitHub
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Level Filters -->
+
+                    <div class="sidebar-filter-block">
+
+                        <span class="filter-title">
+                            المستوى
+                        </span>
+
+                        <div
+                            class="filter-row"
+                            id="levelFilters"
+                            role="group"
+                            aria-label="فلترة حسب المستوى"
+                        >
+
+                            <button
+                                class="filter-chip active"
+                                type="button"
+                                data-level="all"
+                                aria-pressed="true"
+                            >
+                                الكل
+                            </button>
+
+
+                            <button
+                                class="filter-chip"
+                                type="button"
+                                data-level="Beginner"
+                                aria-pressed="false"
+                            >
+                                مبتدئ
+                            </button>
+
+
+                            <button
+                                class="filter-chip"
+                                type="button"
+                                data-level="Intermediate"
+                                aria-pressed="false"
+                            >
+                                متوسط
+                            </button>
+
+
+                            <button
+                                class="filter-chip"
+                                type="button"
+                                data-level="Advanced"
+                                aria-pressed="false"
+                            >
+                                متقدم
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Progress -->
+
+                    <div class="sidebar-progress">
+
+                        <div class="progress-top">
+
+                            <span>
+                                تقدمك في المسار
+                            </span>
+
+                            <strong id="sidebarProgress">
+                                0%
+                            </strong>
+
+                        </div>
+
+
+                        <div
+                            class="progress-track"
+                            role="progressbar"
+                            aria-label="نسبة التقدم في المسار"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            aria-valuenow="0"
+                        >
+                            <span
+                                class="progress-fill"
+                                id="progressFill"
+                            ></span>
+                        </div>
+
+
+                        <div class="progress-meta">
+
+                            <span id="completedSidebarText">
+                                0 من 50 درس
+                            </span>
+
+                            <span>
+                                Fayad Code
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Lesson List -->
+
+                    <div class="lesson-list-section">
+
+                        <div class="lesson-list-heading">
+
+                            <span>
+                                الدروس
+                            </span>
+
+                            <span
+                                class="lesson-count"
+                                id="lessonCount"
+                            >
+                                50
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            class="lesson-list"
+                            id="lessonList"
+                            role="list"
+                        ></div>
+
+                    </div>
+
                 </div>
 
-                <span class="terminal-name"> fayad-code ~/project </span>
-              </div>
+            </aside>
 
-              <div class="terminal-content">
-                <div class="terminal-line">
-                  <span class="prompt">$</span>
-                  <span>git status</span>
-                </div>
 
-                <div class="terminal-output">
-                  On branch main
-                  <br />
-                  Your branch is up to date.
-                </div>
-
-                <div class="terminal-line">
-                  <span class="prompt">$</span>
-                  <span>git add .</span>
-                </div>
-
-                <div class="terminal-line">
-                  <span class="prompt">$</span>
-                  <span>git commit -m "build: first release"</span>
-                </div>
-
-                <div class="terminal-output success">
-                  ✓ changes committed successfully
-                </div>
-
-                <div class="terminal-line terminal-last">
-                  <span class="prompt">$</span>
-                  <span class="typing-effect"> git push origin main </span>
-                  <span class="cursor"></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="terminal-caption">
-              تعلّم الأمر، نفّذه، افهم النتيجة.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =========================
-         APPLICATION
-    ========================== -->
-
-      <main class="learning-app">
-        <!-- Sidebar overlay -->
-
-        <div
-          class="sidebar-overlay"
-          id="sidebarOverlay"
-          aria-hidden="true"
-        ></div>
-
-        <!-- =========================
-           LESSON DRAWER
-      ========================== -->
-
-        <aside class="lesson-sidebar" id="sidebar" aria-label="قائمة الدروس">
-          <div class="sidebar-inner">
-            <div class="sidebar-head">
-              <div>
-                <span class="sidebar-overline"> COURSE CONTENT </span>
-
-                <h2>خطة التعلم</h2>
-              </div>
-
-              <button
-                class="sidebar-close"
-                id="sidebarClose"
-                type="button"
-                aria-label="إغلاق قائمة الدروس"
-              >
-                ×
-              </button>
-            </div>
-
-            <!-- Search -->
-
-            <div class="lesson-search">
-              <span class="search-symbol">⌕</span>
-
-              <input
-                type="search"
-                id="lessonSearch"
-                placeholder="ابحث عن درس أو مفهوم..."
-                autocomplete="off"
-                aria-label="البحث في الدروس"
-              />
-
-              <kbd>/</kbd>
-            </div>
-
-            <!-- Filters -->
-
-            <div class="sidebar-filter-block">
-              <span class="filter-title"> المحتوى </span>
-
-              <div class="filter-row" id="courseFilters">
-                <button
-                  class="filter-chip active"
-                  type="button"
-                  data-course="all"
-                >
-                  الكل
-                </button>
-
-                <button class="filter-chip" type="button" data-course="Git">
-                  Git
-                </button>
-
-                <button class="filter-chip" type="button" data-course="GitHub">
-                  GitHub
-                </button>
-              </div>
-            </div>
-
-            <div class="sidebar-filter-block">
-              <span class="filter-title"> المستوى </span>
-
-              <div class="filter-row" id="levelFilters">
-                <button
-                  class="filter-chip active"
-                  type="button"
-                  data-level="all"
-                >
-                  الكل
-                </button>
-
-                <button class="filter-chip" type="button" data-level="Beginner">
-                  مبتدئ
-                </button>
-
-                <button
-                  class="filter-chip"
-                  type="button"
-                  data-level="Intermediate"
-                >
-                  متوسط
-                </button>
-
-                <button class="filter-chip" type="button" data-level="Advanced">
-                  متقدم
-                </button>
-              </div>
-            </div>
-
-            <!-- Progress -->
-
-            <div class="sidebar-progress">
-              <div class="progress-top">
-                <span> تقدمك في المسار </span>
-
-                <strong id="sidebarProgress"> 0% </strong>
-              </div>
-
-              <div class="progress-track">
-                <span class="progress-fill" id="progressFill"></span>
-              </div>
-
-              <div class="progress-meta">
-                <span id="completedSidebarText"> 0 من 50 درس </span>
-
-                <span> Fayad Code </span>
-              </div>
-            </div>
-
-            <!-- Lesson list -->
-
-            <div class="lesson-list-section">
-              <div class="lesson-list-heading">
-                <span> الدروس </span>
-
-                <span class="lesson-count" id="lessonCount"> 50 </span>
-              </div>
-
-              <div class="lesson-list" id="lessonList"></div>
-            </div>
-          </div>
-        </aside>
-
-        <!-- =========================
-           CONTENT
-      ========================== -->
-
-        <section class="lesson-area">
-          <div class="lesson-container">
-            <!-- Toolbar -->
-
-            <div class="lesson-toolbar">
-              <div class="breadcrumb">
-                <span>Fayad Code</span>
-
-                <span>/</span>
-
-                <span>التعلم</span>
-
-                <span>/</span>
-
-                <strong id="breadcrumbLesson"> بداية المسار </strong>
-              </div>
-
-              <div class="lesson-toolbar-actions">
-                <span class="lesson-position" id="lessonPosition">
-                  1 / 50
-                </span>
-
-                <button
-                  class="mobile-lessons-button"
-                  id="mobileLessonsButton"
-                  type="button"
-                >
-                  ☰ الدروس
-                </button>
-              </div>
-            </div>
-
-            <!-- Lesson -->
-
-            <article class="lesson-content" id="lessonContent"></article>
-
-            <!-- Interactive terminal -->
+            <!-- =================================================
+                 LESSON CONTENT AREA
+            ================================================== -->
 
             <section
-              class="practice-terminal-section"
-              id="practiceTerminalSection"
+                class="lesson-area"
+                aria-label="محتوى الدرس"
             >
-              <div class="section-heading-inline">
-                <div>
-                  <span class="content-label"> PRACTICE </span>
 
-                  <h2>جرّب الأمر بنفسك</h2>
+                <div class="lesson-container">
+
+                    <!-- Toolbar -->
+
+                    <div class="lesson-toolbar">
+
+                        <nav
+                            class="breadcrumb"
+                            aria-label="مسار الصفحة"
+                        >
+                            <span>
+                                Fayad Code
+                            </span>
+
+                            <span aria-hidden="true">
+                                /
+                            </span>
+
+                            <span>
+                                التعلم
+                            </span>
+
+                            <span aria-hidden="true">
+                                /
+                            </span>
+
+                            <strong id="breadcrumbLesson">
+                                بداية المسار
+                            </strong>
+                        </nav>
+
+
+                        <div class="lesson-toolbar-actions">
+
+                            <span
+                                class="lesson-position"
+                                id="lessonPosition"
+                                aria-live="polite"
+                            >
+                                1 / 50
+                            </span>
+
+
+                            <button
+                                class="mobile-lessons-button"
+                                id="mobileLessonsButton"
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="sidebar"
+                            >
+                                ☰ الدروس
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Dynamic Lesson -->
+
+                    <article
+                        class="lesson-content"
+                        id="lessonContent"
+                        aria-live="polite"
+                    ></article>
+
+
+                    <!-- =================================================
+                         INTERACTIVE TERMINAL
+                    ================================================== -->
+
+                    <section
+                        class="practice-terminal-section"
+                        id="practiceTerminalSection"
+                        aria-labelledby="practiceTitle"
+                    >
+
+                        <div class="section-heading-inline">
+
+                            <div>
+
+                                <span class="content-label">
+                                    PRACTICE
+                                </span>
+
+                                <h2 id="practiceTitle">
+                                    جرّب الأمر بنفسك
+                                </h2>
+
+                            </div>
+
+
+                            <span class="terminal-status">
+                                محاكاة آمنة
+                            </span>
+
+                        </div>
+
+
+                        <p class="practice-description">
+                            هذه المحاكاة لا تنفذ أوامر على جهازك الحقيقي.
+                            اكتب أمر Git وشاهد كيف يمكن أن تكون النتيجة.
+                        </p>
+
+
+                        <div class="practice-terminal">
+
+                            <div class="practice-terminal-top">
+
+                                <span>
+                                    fayad@learning:~/project
+                                </span>
+
+
+                                <button
+                                    type="button"
+                                    id="clearTerminal"
+                                    aria-label="مسح نتيجة المحاكاة"
+                                >
+                                    مسح
+                                </button>
+
+                            </div>
+
+
+                            <div
+                                class="practice-output"
+                                id="practiceOutput"
+                                aria-live="polite"
+                                aria-atomic="false"
+                            >
+
+                                <div class="sim-line">
+
+                                    <span
+                                        class="sim-prompt"
+                                        aria-hidden="true"
+                                    >
+                                        $
+                                    </span>
+
+                                    <span>
+                                        اكتب أمرًا مثل:
+                                        <code>git status</code>
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <form
+                                class="practice-input-row"
+                                id="practiceForm"
+                            >
+
+                                <span aria-hidden="true">
+                                    $
+                                </span>
+
+
+                                <input
+                                    id="practiceInput"
+                                    type="text"
+                                    autocomplete="off"
+                                    autocapitalize="off"
+                                    spellcheck="false"
+                                    inputmode="text"
+                                    placeholder="git status"
+                                    aria-label="أمر Git"
+                                >
+
+
+                                <button
+                                    type="submit"
+                                >
+                                    تشغيل
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         QUIZ
+                    ================================================== -->
+
+                    <section
+                        class="quiz-card"
+                        id="quizCard"
+                        aria-labelledby="quizTitle"
+                    >
+
+                        <div class="quiz-header">
+
+                            <div
+                                class="quiz-number"
+                                aria-hidden="true"
+                            >
+                                ?
+                            </div>
+
+
+                            <div>
+
+                                <span class="content-label">
+                                    KNOWLEDGE CHECK
+                                </span>
+
+                                <h2 id="quizTitle">
+                                    اختبر فهمك
+                                </h2>
+
+                                <p>
+                                    لن يكفي أن تحفظ الأمر.
+                                    حاول الإجابة قبل رؤية النتيجة.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="quiz-content"
+                            id="quizContent"
+                        ></div>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         LESSON NAVIGATION
+                    ================================================== -->
+
+                    <section
+                        class="lesson-navigation"
+                        aria-label="التنقل بين الدروس"
+                    >
+
+                        <button
+                            class="lesson-nav-button"
+                            id="previousLesson"
+                            type="button"
+                        >
+
+                            <span aria-hidden="true">
+                                →
+                            </span>
+
+                            <span>
+                                <small>
+                                    السابق
+                                </small>
+
+                                <strong>
+                                    الدرس السابق
+                                </strong>
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            class="lesson-complete"
+                            id="completeLesson"
+                            type="button"
+                            aria-pressed="false"
+                        >
+
+                            <span
+                                class="complete-icon"
+                                id="completeIcon"
+                                aria-hidden="true"
+                            >
+                                ✓
+                            </span>
+
+                            <span id="completeText">
+                                تحديد الدرس كمكتمل
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            class="lesson-nav-button next"
+                            id="nextLesson"
+                            type="button"
+                        >
+
+                            <span>
+
+                                <small>
+                                    التالي
+                                </small>
+
+                                <strong>
+                                    الدرس التالي
+                                </strong>
+
+                            </span>
+
+                            <span aria-hidden="true">
+                                ←
+                            </span>
+
+                        </button>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         LEARNING TIP
+                    ================================================== -->
+
+                    <aside
+                        class="learning-tip"
+                        aria-label="نصيحة من Fayad Code"
+                    >
+
+                        <div
+                            class="tip-symbol"
+                            aria-hidden="true"
+                        >
+                            !
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                قاعدة Fayad Code
+                            </strong>
+
+                            <p>
+                                لا تحفظ Git كقائمة أوامر.
+                                حاول دائمًا أن تربط الأمر بالمشكلة التي يحلها،
+                                ثم نفّذه، وشاهد الـ output، وبعدها جرّب تغيير
+                                السيناريو لترى ماذا يحدث.
+                            </p>
+
+                        </div>
+
+                    </aside>
+
                 </div>
 
-                <span class="terminal-status"> محاكاة آمنة </span>
-              </div>
+            </section>
 
-              <p class="practice-description">
-                هذه المحاكاة لا تنفذ أوامر على جهازك الحقيقي. اكتب أمر Git وشاهد
-                كيف يمكن أن تكون النتيجة.
-              </p>
+        </main>
 
-              <div class="practice-terminal">
-                <div class="practice-terminal-top">
-                  <span> fayad@learning:~/project </span>
 
-                  <button type="button" id="clearTerminal">مسح</button>
-                </div>
+        <!-- =====================================================
+             FOOTER
+        ====================================================== -->
 
-                <div
-                  class="practice-output"
-                  id="practiceOutput"
-                  aria-live="polite"
+        <footer class="learning-footer">
+
+            <div class="footer-inner">
+
+                <a
+                    href="../index.html"
+                    class="footer-brand"
+                    aria-label="العودة إلى Fayad Code"
                 >
-                  <div class="sim-line">
-                    <span class="sim-prompt">$</span>
-                    <span>
-                      اكتب أمرًا مثل:
-                      <code>git status</code>
+
+                    <span
+                        class="footer-mark"
+                        aria-hidden="true"
+                    >
+                        F
                     </span>
-                  </div>
-                </div>
 
-                <form class="practice-input-row" id="practiceForm">
-                  <span>$</span>
 
-                  <input
-                    id="practiceInput"
-                    type="text"
-                    autocomplete="off"
-                    spellcheck="false"
-                    placeholder="git status"
-                    aria-label="أمر Git"
-                  />
+                    <span>
 
-                  <button type="submit">تشغيل</button>
-                </form>
-              </div>
-            </section>
+                        <strong>
+                            Fayad Code
+                        </strong>
 
-            <!-- Quiz -->
+                        <small>
+                            Learn. Build. Grow.
+                        </small>
 
-            <section class="quiz-card" id="quizCard">
-              <div class="quiz-header">
-                <div class="quiz-number">?</div>
+                    </span>
 
-                <div>
-                  <span class="content-label"> KNOWLEDGE CHECK </span>
+                </a>
 
-                  <h2>اختبر فهمك</h2>
-
-                  <p>لن يكفي أن تحفظ الأمر. حاول الإجابة قبل رؤية النتيجة.</p>
-                </div>
-              </div>
-
-              <div class="quiz-content" id="quizContent"></div>
-            </section>
-
-            <!-- Navigation -->
-
-            <section class="lesson-navigation">
-              <button
-                class="lesson-nav-button"
-                id="previousLesson"
-                type="button"
-              >
-                <span>→</span>
-
-                <span>
-                  <small>السابق</small>
-                  <strong>الدرس السابق</strong>
-                </span>
-              </button>
-
-              <button class="lesson-complete" id="completeLesson" type="button">
-                <span class="complete-icon" id="completeIcon"> ✓ </span>
-
-                <span id="completeText"> تحديد الدرس كمكتمل </span>
-              </button>
-
-              <button
-                class="lesson-nav-button next"
-                id="nextLesson"
-                type="button"
-              >
-                <span>
-                  <small>التالي</small>
-                  <strong>الدرس التالي</strong>
-                </span>
-
-                <span>←</span>
-              </button>
-            </section>
-
-            <!-- Tip -->
-
-            <aside class="learning-tip">
-              <div class="tip-symbol">!</div>
-
-              <div>
-                <strong> قاعدة Fayad Code </strong>
 
                 <p>
-                  لا تحفظ Git كقائمة أوامر. حاول دائمًا أن تربط الأمر بالمشكلة
-                  التي يحلها، ثم نفّذه، وشاهد الـ output، وبعدها جرّب تغيير
-                  السيناريو لترى ماذا يحدث.
+                    مسار عملي لتعلم Git وGitHub
+                    وبناء أساس قوي للعمل البرمجي.
                 </p>
-              </div>
-            </aside>
-          </div>
-        </section>
-      </main>
 
-      <!-- =========================
-         FOOTER
-    ========================== -->
 
-      <footer class="learning-footer">
-        <div class="footer-inner">
-          <a href="../index.html" class="footer-brand">
-            <span class="footer-mark"> F </span>
+                <span class="footer-copy">
+                    ©
+                    <span id="currentYear"></span>
+                    Fayad Code
+                </span>
 
-            <span>
-              <strong>Fayad Code</strong>
-              <small>Learn. Build. Grow.</small>
-            </span>
-          </a>
+            </div>
 
-          <p>مسار عملي لتعلم Git وGitHub وبناء أساس قوي للعمل البرمجي.</p>
+        </footer>
 
-          <span class="footer-copy">
-            © <span id="currentYear"></span> Fayad Code
-          </span>
-        </div>
-      </footer>
     </div>
 
-    <script src="./script.js"></script>
-  </body>
+
+    <!-- Learning JavaScript -->
+
+    <script
+        src="./script.js"
+        defer
+    ></script>
+
+</body>
 </html>

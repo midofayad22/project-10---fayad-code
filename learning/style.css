@@ -3431,3 +3431,10 @@ img {
   }
 
 }
+@media (max-width: 900px) {
+    .sidebar {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+        padding-right: env(safe-area-inset-right);
+    }
+}
